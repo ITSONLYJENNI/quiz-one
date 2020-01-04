@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2019_12_21_062858) do
 
   create_table "states", force: :cascade do |t|
     t.string "state"
-    t.string "season"
+    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
