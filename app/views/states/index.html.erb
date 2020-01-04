@@ -1,7 +1,20 @@
 <header>
-  <div class="overlay">
-<h1>Top 5 States To Visit</h1>
-<p>Looking for a quick and fun getaway?</p>
-  <br>
-  </div>
+    <div class="overlay">
+  <h1>Top 5 States To Visit</h1>
+  <p>Looking for a quick and fun getaway?</p>
+    <br>
+    </div>
 </header>
+
+<br /><br />
+
+<body>
+  <% @states.each do |state| %>
+    <div>
+      <h2><%= state.name %></h2><br />
+      <i><%= state.description %></i><br />
+    </div>
+
+    <hr />
+  <% end %>
+</body>

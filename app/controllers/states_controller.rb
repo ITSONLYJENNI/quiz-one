@@ -1,5 +1,5 @@
 class StatesController < ApplicationController
   def index
-    @state = State.all
+    @states = State.all
   end
 end
